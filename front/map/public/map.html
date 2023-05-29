@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Map</title>
+  <style>
+    #map {
+      height: 100%;
+    }
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+<div id="map"></div>
+<script src="https://maps.googleapis.com/maps/api/js/?key=AIzaSyD7s4PzstYghKQt9a6SkIbv8PkSzWIOhSQ&callback=initMap"
+        async defer></script>
+<script src="map.js"></script>
+<script>
+  initMap();
+</script>
+</body>
+</html>

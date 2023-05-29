@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Map</title>
+  <style>
+    #map {
+      height: 100%;
+    }
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+<div id="map"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7s4PzstYghKQt9a6SkIbv8PkSzWIOhSQ&callback=initMap"
+        async defer></script>
+<script src="public/map.js"></script>
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const lat1 = parseFloat(urlParams.get("lat1"));
+  const lng1 = parseFloat(urlParams.get("lng1"));
+  const lat2 = parseFloat(urlParams.get("lat2"));
+  const lng2 = parseFloat(urlParams.get("lng2"));
+  initMap(lat1, lng1, lat2, lng2);
+</script>
+</body>
+</html>

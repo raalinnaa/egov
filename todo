@@ -1,0 +1,25 @@
+# TODO
+mockup payment system and calc delivery price
+
+list of available orders
+assign to courier
+unassign to courier
+complete order
+
+otp
+
+add response serializer so it should be in detail
+
+con
+need all orders with filter and pagination
+
+con
+1) send otp to courier
+2) verify otp, after that send sms to client that courier is on the way
+3) correct permissions for all endpoints
+
+
+1) cashback system
+2) price ~ time
+3) map
+4) django admin
